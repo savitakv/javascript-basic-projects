@@ -1,4 +1,10 @@
 # Starter pipeline
+- task: synopsys-coverity@1
+  inputs:
+    projectName: 'TestProject'
+    streamName: 'TestStream'
+    coverityBuildDirectory: '$(Build.Repository.LocalPath)'
+    buildCommand: '--no-command'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
