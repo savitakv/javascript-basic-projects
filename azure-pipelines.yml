@@ -19,7 +19,7 @@ steps:
   displayName: 'Run a multi-line script'
 - task: synopsys-coverity@1
   inputs:
-    coverityService: 'CIM'
+    coverityService: 'CIMSSL'
     projectName: 'TestProject'
     streamName: 'TestStream'
     coverityBuildDirectory: '$(Build.Repository.LocalPath)'
