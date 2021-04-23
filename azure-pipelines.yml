@@ -1,6 +1,7 @@
 # Starter pipeline
 - task: synopsys-coverity@1
   inputs:
+    coverityService: 'CIM'
     projectName: 'TestProject'
     streamName: 'TestStream'
     coverityBuildDirectory: '$(Build.Repository.LocalPath)'
